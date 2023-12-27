@@ -442,6 +442,21 @@
                     </li>
                 </ul>
             </div>
+            <div>
+                <p class="footer_form_title">Subscribe</p>
+                <form class="footer-form" name="subscribe">
+                    <label class="footer-email">
+                        <input class="footer-input" type="email" placeholder="E-mail">
+                    </label>
+                    <button type="submit">
+                        Subscribe
+                        <svg class="" width="" height="">
+                            <use href=""></use>
+                        </svg>
+                    </button>
+
+                </form>
+            </div>
         </div>
     </footer>
     <!-- modal wimdow-->
@@ -453,9 +468,31 @@
                 </svg>
             </button>
             <p class="modal-title">Leave your contacts and we will call you back</p>
-            <form class="modal-form" name="">
-                <input type="text">
-                <input type="text">
+            <form class="modal-form" name="modal">
+                <label class="form-label" for="user-name">Name</label>
+                <div class="form-field">
+                    <input class="form-input" id="user-name" name="user-name" type="text">
+                    <svg class="form-icon" width="18px" height="18px">
+                        <use href="./images/icons.svg#icon-name"></use>
+                    </svg>
+                </div>
+
+                <label class="form-label" for="user-phone">Phone</label>
+                <div class="form-field">
+                    <input class="form-input" id="user-phone" name="user-phone" type="phone" />
+                    <svg class="form-icon" width="18px" height="18px">
+                        <use href="./images/icons.svg#icon-phone"></use>
+                    </svg>
+                </div>
+
+                <label class="form-label" for="user-email">Email</label>
+                <div class="form-field">
+                    <input class="form-input" id="user-email" name="user-email" type="email" />
+                    <svg class="form-icon" width="18px" height="18px">
+                        <use href="images/icons.svg#icon-email"></use>
+                    </svg>
+                </div>
+
                 <button type="submit">Send</button>
 
             </form>
