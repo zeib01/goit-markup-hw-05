@@ -242,7 +242,6 @@ a {
 
 .back-color-title {
     font-weight: 500;
-    font-size: 16px;
     line-height: 1.2;
     font-weight: 500;
     letter-spacing: 0.02em;
@@ -268,7 +267,6 @@ a {
 
 
 .center {
-    font-size: 16px;
     line-height: 1.5;
     font-weight: 400;
     letter-spacing: 0.02em;
@@ -326,7 +324,6 @@ a {
 
 
 .list-text {
-    font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
@@ -472,7 +469,6 @@ a {
 
 .footer-text {
     color: var(--CLOUD, #F4F4FD);
-    font-size: 16px;
     font-weight: 400;
     letter-spacing: 0.32px;
     max-width: 264px;
@@ -524,6 +520,60 @@ a {
     fill: #f4f4fd;
 }
 
+.footer-form-wrapper {
+    margin-left: auto;
+}
+
+.footer_form_title {
+    color: #FFF;
+    font-weight: 500;
+    line-height: 1.5;
+    margin-bottom: 16px;
+}
+
+.footer-form {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+
+}
+
+.footer-email {}
+
+.footer-input {
+    width: 264px;
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    outline: transparent;
+    background: #2E2F42;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.48px;
+    padding-left: 16px;
+    color: #FFF;
+}
+
+.footer-input::placeholder {
+    color: currentColor;
+}
+
+.footer-btn {
+    display: flex;
+    gap: 16px;
+    padding: 8px 24px;
+    color: #FFF;
+    text-align: center;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.64px;
+    border-radius: 4px;
+    background: #4D5AE5;
+}
+
+.footer-svg {}
+
 /*modal wimdow*/
 
 .backdrop {
@@ -546,8 +596,11 @@ a {
     pointer-events: initial;
 }
 
+
 .modal {
-    position: relative;
+    position: absolute;
+    left: 516px;
+    top: 80px;
     width: 408px;
     min-height: 584px;
     padding: 72px 24px 24px 24px;
@@ -555,6 +608,8 @@ a {
     background-color: #FCFCFC;
     box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.20);
 }
+
+.modal-form {}
 
 .modal-btn {
     position: absolute;
@@ -580,7 +635,6 @@ a {
 .modal-title {
     color: #2E2F42;
     text-align: center;
-    font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.32px;
@@ -589,8 +643,12 @@ a {
 
 .modal-form {}
 
-.form-label {
+.modal-wrapper {
+    margin-bottom: 8px;
     display: block;
+}
+
+.form-label {
     margin-bottom: 4px;
     color: #8E8F99;
     font-size: 12px;
@@ -602,20 +660,42 @@ a {
     position: relative;
 }
 
-.form-input {
+.form-input,
+.form-comment {
     width: 100%;
-    height: 58px;
     border-radius: 4px;
     border: 1px solid rgba(46, 47, 66, 0.40);
     outline: none;
-    padding-left: 38px;
+
 
     transition: border-color 300ms ease-in;
 }
 
+.form-input {
+    height: 58px;
+    padding-left: 38px;
+}
+
+.form-comment {
+    color: rgba(46, 47, 66, 0.40);
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.48px;
+    resize: none;
+    min-height: 120px;
+
+    padding: 12px 16px;
+}
+
+.form-comment:focus,
 .form-input:focus {
     border: 1px solid #4D5AE5;
 }
+
+.form-comment::placeholder {
+    color: currentColor;
+}
+
 
 .form-icon {
     position: absolute;
@@ -629,4 +709,46 @@ a {
 
 .form-input:focus+.form-icon {
     fill: #4D5AE5;
+}
+
+.checkbox {
+    display: block;
+    margin-bottom: 24px;
+
+    color: #8E8F99;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.48px;
+}
+
+.checkbox-input {}
+
+.agreement-icon {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid rgba(46, 47, 66, 0.40);
+    border-radius: 4px;
+
+    width: 16px;
+    height: 16px;
+    transition: border-color 300ms ease,  
+    background-color 300ms ease;
+}
+
+.checkbox-icon {
+    opacity: 0;
+}
+
+.checkbox-input:checked + .agreement-icon {
+    background-color: #404BBF;
+    border-bottom: #404BBF;
+}
+.checkbox-input:checked + .agreement-icon > .checkbox-icon {
+    opacity: 1;
+}
+.agreement-link {
+    color: #4D5AE5;
+    text-decoration-line: underline;
 }
