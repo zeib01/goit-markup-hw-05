@@ -792,23 +792,26 @@ a {
 
     width: 16px;
     height: 16px;
+     fill: transparent;
 
+    
+    border-radius: 2px; 
+    border: 1px solid rgba(46, 47, 66, 0.4);
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    fill: transparent;
-    border: 1px solid rgba(46, 47, 66, 0.4); 
+   
     }
 
 .checkbox-icon {
     opacity: 0;
 }
 
-.checkbox-input:checked+.checkbox-label>.checkbox-frame {
+.checkbox-input:checked+.checkbox-label .checkbox-frame {
     border: none;
     fill: #F4F4FD;
     background-color: #404bbf;
 }
 
-.checkbox-input:checked+.checkbox-label>.checkbox-frame>.checkbox-icon {
+.checkbox-input:checked+.checkbox-label .checkbox-icon {
     opacity: 1;
  }
 
