@@ -21,6 +21,11 @@
                 <a class="logo_items" href="./index.html">Web
                     <span class="logo">Studio</span>
                 </a>
+                <button class="menu-btn" type="button" aria-label="Open menu button">
+                    <svg class="menu-btn-icon" width="24" height="24">
+                        <use href="./images/icons.svg#icon-burger"></use>
+                    </svg>
+                </button>
                 <ul class="nav-menu">
                     <li class="nav-item">
                         <a class="navigation-style active" href="./index.html">Studio</a>
@@ -46,7 +51,8 @@
         </div>
     </header>
     <main>
-        <!-- section "wrapper-->
+
+        <!-- section wrapper-->
         <section class="wrapper">
             <div class="container">
                 <h1 class="wrapper_title">
@@ -110,10 +116,11 @@
         </section>
 
         <!-- section2 aside-->
+
         <section class="aside">
+
             <div class="container">
                 <h2 class="aside-title">Our Team</h2>
-                <!--<div class="box">-->
                 <ul class="aside-list">
                     <li class="back-color">
                         <img src="./images/product-designer.jpg" alt="Product Designer Mark Guerrero" width="264"
@@ -285,7 +292,6 @@
                         </div>
                     </li>
                 </ul>
-                <!--</div>-->
             </div>
         </section>
 
@@ -305,7 +311,7 @@
                             </p>
                         </div>
                         <div class="portfolio-name">
-                            <h3 class="list-text-title">Banking App</h3>
+                            <h3 class="port-text-title">Banking App</h3>
                             <p class="list-text">App</p>
                         </div>
                     </li>
@@ -320,7 +326,7 @@
                             </p>
                         </div>
                         <div class="portfolio-name">
-                            <h3 class="list-text-title">Cashless Payment</h3>
+                            <h3 class="port-text-title">Cashless Payment</h3>
                             <p class="list-text">Marketing</p>
                         </div>
                     </li>
@@ -335,7 +341,7 @@
                             </p>
                         </div>
                         <div class="portfolio-name">
-                            <h3 class="list-text-title">Meditation App</h3>
+                            <h3 class="port-text-title">Meditation App</h3>
                             <p class="list-text">App</p>
                         </div>
                     </li>
@@ -350,7 +356,7 @@
                             </p>
                         </div>
                         <div class="portfolio-name">
-                            <h3 class="list-text-title">Taxi Service</h3>
+                            <h3 class="port-text-title">Taxi Service</h3>
                             <p class="list-text">Marketing</p>
                         </div>
                     </li>
@@ -366,7 +372,7 @@
                             </p>
                         </div>
                         <div class="portfolio-name">
-                            <h3 class="list-text-title">Screen Illustrations</h3>
+                            <h3 class="port-text-title">Screen Illustrations</h3>
                             <p class="list-text">Design</p>
                         </div>
                     </li>
@@ -381,13 +387,14 @@
                             </p>
                         </div>
                         <div class="portfolio-name">
-                            <h3 class="list-text-title">Online Courses</h3>
+                            <h3 class="port-text-title">Online Courses</h3>
                             <p class="list-text">Marketing</p>
                         </div>
                     </li>
                 </ul>
             </div>
         </section>
+
     </main>
     <footer class="footer-container">
         <div class="container footer-box">
@@ -521,6 +528,64 @@
         </div>
     </div>
 
+    <!--mobile menu-->
+    <div class="menu is-hidden">
+        <button class="mob-menu-btn" type="button" aria-label="close menu btn">
+            <svg class="mob-menu-item" width="8" height="8">
+                <use href="./images/icons.svg#icon-btn-close"></use>
+            </svg>
+        </button>
+
+        <ul class="mobile-menu">
+            <li class="mobile-list"><a href="../index.html" class="mobile-nav-link">Studio</a></li>
+            <li class="mobile-list"><a href="../index.html" class="mobile-nav-link">Portfolio</a></li>
+            <li class="mobile-list"><a href="../index.html" class="mobile-nav-link">Contacts</a></li>
+        </ul>
+        <div class="adress-mob">
+            <address class="adress-mob">
+                <ul class="adress-link-mob">
+                    <li class="adress-link-item-mob">
+                        <a class=" phon-link-mob" href="tel:+110001111111">+11 (000) 111-11-11</a>
+                    </li>
+                    <li class="adress-link-item-mob">
+                        <a class=" phon-link-mob" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                    </li>
+                </ul>
+            </address>
+        </div>
+
+        <ul class="socials">
+            <li class="socials-items">
+                <a class="social-link" href="" aria-label="Link to Instagram" target="_blank" rel="noopener noreferrer">
+                    <svg class="socials-icon" width="24" height="24">
+                        <use href="../images/icons.svg#icon-instagram"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="socials-items">
+                <a class="social-link" href="" aria-label="Link to Twitter" target="_blank" rel="noopener noreferrer">
+                    <svg class="socials-icon" width="24" height="24">
+                        <use href="../images/icons.svg#icon-twitter"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="socials-items">
+                <a class="social-link" href="" aria-label="Link to Facebook" target="_blank" rel="noopener noreferrer">
+                    <svg class="socials-icon" width="24" height="24">
+                        <use href="../images/icons.svg#icon-facebook"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="socials-items">
+                <a class="social-link" href="" aria-label="Link to Linkedin" target="_blank" rel="noopener noreferrer">
+                    <svg class="socials-icon" width="24" height="24
+                ">
+                        <use href="../images/icons.svg#icon-linkedin"></use>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+    </div>
 </body>
 
 </html>
