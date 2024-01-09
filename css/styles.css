@@ -906,7 +906,9 @@ a {
 
 
     /* -mobile menu */
-    .menu-btn {
+    .menu is-hidden {}
+
+    /* .menu-btn {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -919,6 +921,7 @@ a {
             display: none;
         }
     }
+    */
 
 
     .menu {
@@ -1035,6 +1038,10 @@ a {
     .socials-icon {
         fill: #FFF;
     }
+
+
+
+
 
 
     /*modal wimdow*/
